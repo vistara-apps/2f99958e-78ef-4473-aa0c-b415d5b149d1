@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm social theme - dark teal background with coral accents */
+  --color-bg: hsl(180, 25%, 15%);
+  --color-fg: hsl(0, 0%, 95%);
+  --color-accent: #ff6b6b;
+  --color-border: hsl(180, 15%, 25%);
+  --color-surface: hsl(180, 20%, 18%);
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(180, 10%, 70%);
+}
+
+[data-theme="celo"] {
+  --color-bg: hsl(0, 0%, 0%);
+  --color-fg: hsl(0, 0%, 100%);
+  --color-accent: #fbcc5c;
+  --color-border: hsl(0, 0%, 20%);
+  --color-surface: hsl(0, 0%, 5%);
+  --color-text-primary: hsl(0, 0%, 100%);
+  --color-text-secondary: hsl(0, 0%, 70%);
+}
+
+[data-theme="solana"] {
+  --color-bg: hsl(260, 30%, 10%);
+  --color-fg: hsl(0, 0%, 95%);
+  --color-accent: #9945ff;
+  --color-border: hsl(260, 20%, 25%);
+  --color-surface: hsl(260, 25%, 15%);
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(260, 15%, 70%);
+}
+
+[data-theme="base"] {
+  --color-bg: hsl(220, 40%, 10%);
+  --color-fg: hsl(0, 0%, 95%);
+  --color-accent: #0052ff;
+  --color-border: hsl(220, 30%, 25%);
+  --color-surface: hsl(220, 35%, 15%);
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(220, 20%, 70%);
+}
+
+[data-theme="coinbase"] {
+  --color-bg: hsl(220, 50%, 8%);
+  --color-fg: hsl(0, 0%, 95%);
+  --color-accent: #0052ff;
+  --color-border: hsl(220, 40%, 20%);
+  --color-surface: hsl(220, 45%, 12%);
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(220, 25%, 70%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface border border-border backdrop-blur-sm;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-all duration-200 shadow-card hover:shadow-modal;
+  }
+  
+  .btn-outline {
+    @apply border border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all duration-200;
+  }
+  
+  .status-available {
+    @apply bg-green-500 text-white;
+  }
+  
+  .status-busy {
+    @apply bg-yellow-500 text-white;
+  }
+  
+  .status-offline {
+    @apply bg-gray-500 text-white;
+  }
+  
+  .status-open {
+    @apply bg-blue-500 text-white;
+  }
+  
+  .status-in-progress {
+    @apply bg-orange-500 text-white;
+  }
+  
+  .status-completed {
+    @apply bg-green-500 text-white;
+  }
+}
