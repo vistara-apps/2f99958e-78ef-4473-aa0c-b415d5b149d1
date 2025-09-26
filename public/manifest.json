@@ -1,0 +1,14 @@
+{
+  "name": "AgentMatch",
+  "description": "AgentMatch is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://2f99958e-78ef-4473-aa0c-b415d5b149d1.vercel.app",
+  "properties": {
+    "app": {
+      "name": "AgentMatch",
+      "description": "AgentMatch is a Base Mini App built with Zara.",
+      "url": "https://2f99958e-78ef-4473-aa0c-b415d5b149d1.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

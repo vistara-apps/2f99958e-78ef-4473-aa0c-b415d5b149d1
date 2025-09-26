@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "AgentMatch",
+    "subtitle": "Built with Zara",
+    "description": "AgentMatch is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app",
+    "splashImageUrl": "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app/image.png",
+    "tagline": "AgentMatch",
+    "screenshotUrls": [
+      "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app/screenshot.png",
+      "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://2f99958e78ef4473aa0cb415d5b149d1-nbb3.vercel.app/api/webhook"
+  }
+}
